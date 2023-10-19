@@ -11,9 +11,25 @@
 
 <script src="https://agility-force-6488.scratch.my.site.com/lightningout/lightning/lightning.out.js"></script>
 
-<div data-lightning-out="true"></div>
+<!-- <div data-lightning-out="true"></div> -->
+
+  <div id="lightning-container"></div>
 
   <script>
+        $Lightning.use("c:OptOutFormWrapper", function() {
+            $Lightning.createComponent(
+                "c:optoutForm",
+                {},
+                "lightning-container",
+                function(cmp) {
+                    // Component created!
+                    console.log('Component created successfully:', cmp);
+                }
+            );
+        });
+    </script>
+
+<!--   <script>
 
     const appName = 'c:OptOutFormWrapper';
     const componentName = 'c:optoutForm';
@@ -39,7 +55,7 @@
     );
 
 
-  </script>
+  </script> -->
 
 
 </html>
