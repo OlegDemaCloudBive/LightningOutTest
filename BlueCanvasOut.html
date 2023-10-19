@@ -11,29 +11,12 @@
 
 <script src="https://agility-force-6488.scratch.lightning.force.com/lightning/lightning.out.js"></script>
 
-<!-- <div data-lightning-out="true"></div> -->
-
-  <div id="lightning-container"></div>
-
+<div data-lightning-out="true"></div>
   <script>
-        $Lightning.use("c:OptOutFormWrapper", function() {
-            $Lightning.createComponent(
-                "c:optoutForm",
-                {},
-                "lightning-container",
-                function(cmp) {
-                    // Component created!
-                    console.log('Component created successfully:', cmp);
-                }
-            );
-        });
-    </script>
-
-<!--   <script>
 
     const appName = 'c:OptOutFormWrapper';
     const componentName = 'c:optoutForm';
-    const lightningEndpoint = 'https://agility-force-6488.scratch.my.site.com/lightningout';
+    const lightningEndpoint = 'https://agility-force-6488.scratch.lightning.force.com';
     const targetElement = document.querySelector("[data-lightning-out]");
     const componentAttributes = {
 
@@ -55,7 +38,7 @@
     );
 
 
-  </script> -->
+  </script>
 
 
 </html>
